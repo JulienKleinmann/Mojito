@@ -1,6 +1,6 @@
 library(shinyalert)
 library(shinyjs)
-
+library(shinyWidgets)
 ui <- fluidPage( includeCSS("www/bootstrap.css"), 
                  navbarPage(h1("THE MOJITO GAME",
                                style = "font-family: 'Neucha', cursive;
