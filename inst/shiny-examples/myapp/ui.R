@@ -1,3 +1,7 @@
+library(shinyjs)
+library(ggplot2)
+library(shinyWidgets)
+library(shinyalert)
 
 ui <- fluidPage( includeCSS("www/bootstrap.css"), 
                  navbarPage(h1("THE MOJITO GAME",

@@ -1,5 +1,1 @@
 exportPattern("^[[:alpha:]]+")
-import(shinyalert)
-import(shinyjs)
-import(shinyWidgets)
-import(ggplot2)
