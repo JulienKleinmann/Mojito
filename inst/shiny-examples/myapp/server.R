@@ -5,8 +5,8 @@ server <- function(input, output, session) {
     # Define server logic to show elapsed time, update every second ----
     show("game")
     hide("startbutton")
-  
-  
+    
+    
     # Define server logic to show elapsed time, update every second ----
     
     initialtime <- Sys.time()
@@ -190,18 +190,18 @@ server <- function(input, output, session) {
       invalidateLater(10000)
       isolate({
         rv$piggy_bank <- rv$piggy_bank - 2*rv$numberofserver
-      rv$piggy_bank <- rv$piggy_bank - 0.1*rv$rhumstock
-      rv$piggy_bank <- rv$piggy_bank - 0.1*rv$mintstock
-      rv$piggy_bank <- rv$piggy_bank - 0.1*rv$lemonstock
-      rv$piggy_bank <- rv$piggy_bank - 0.1*rv$sugarstock
-      
-      
-     })
+        rv$piggy_bank <- rv$piggy_bank - 0.1*rv$rhumstock
+        rv$piggy_bank <- rv$piggy_bank - 0.1*rv$mintstock
+        rv$piggy_bank <- rv$piggy_bank - 0.1*rv$lemonstock
+        rv$piggy_bank <- rv$piggy_bank - 0.1*rv$sugarstock
+        
+        
+      })
       
     })
     
     observe({rv$totalcost <- 2*rv$numberofserver+0.1*rv$rhumstock+0.1*rv$mintstock+0.1*rv$lemonstock+0.1*rv$sugarstock})
-   
+    
     
     ## see the data frame
     output$loc <- renderDataTable({
@@ -256,3 +256,6 @@ server <- function(input, output, session) {
   })
   
 }
+
+
+

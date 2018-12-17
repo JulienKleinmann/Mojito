@@ -1,12 +1,12 @@
 Package: Mojito
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Play the Mojito Game
 Version: 0.1.0
-Author: Who wrote it
+Author: ggplot3
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: This package was build to host our desicion game called : Mojito.It thus just have function to lauchn the coresponding shiny app. 
 License: What license is it under?
 Imports: ggplot2, shinyWidgets, shinyalert , shinyjs, shiny (>= 1.2.0)
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.1
